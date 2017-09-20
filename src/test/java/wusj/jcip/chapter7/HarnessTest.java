@@ -1,12 +1,14 @@
-package wusj.jcip.chapter5;
+package wusj.jcip.chapter7;
 
 import java.util.concurrent.CountDownLatch;
+
+import wusj.jcip.chapter5.HarnessTask;
 /**
  * ±ÕËø
  * @author wusj
  *
  */
-public class TestHarness {
+public class HarnessTest {
 	public static long timeTasks(int nThread, final Runnable task) 
 		   throws InterruptedException {
 		final CountDownLatch startGate = new CountDownLatch(1);
