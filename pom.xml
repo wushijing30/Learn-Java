@@ -3,6 +3,28 @@
   <groupId>wusj</groupId>
   <artifactId>learn-java</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <name>learn-java</name>
+    <dependencies>
+        <!-- 测试-->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>3.8.1</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    <name>learn-java</name>
   <description>learn-java</description>
 </project>
